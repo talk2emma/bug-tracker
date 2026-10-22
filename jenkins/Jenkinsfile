@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello and welcome to Emmanuel world'
+                sh 'echo "Hello Emmanuel Senior QA"'
+                sh 'date'
+            }
+        }
+    }
+}
